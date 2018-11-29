@@ -14,7 +14,7 @@
 function hwdsb_blacklist_blocks() {
     wp_enqueue_script(
         'hwdsb-blacklist-blocks',
-        plugins_url( 'my-plugin.js', __FILE__ ),
+        plugins_url( 'block-blocks.js', __FILE__ ),
         array( 'wp-blocks' )
     );
 }
