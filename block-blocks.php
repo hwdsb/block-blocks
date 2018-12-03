@@ -10,10 +10,14 @@
  *
  */
 
+// Exit if accessed directly.
+if ( ! defined( 'ABSPATH' ) ) {
+	die( 'Silence is golden.' );
+}
 
 function hwdsb_blacklist_blocks() {
     wp_enqueue_script(
-        'hwdsb-blacklist-blocks',
+        'hwdsb_blacklist_blocks',
         plugins_url( 'block-blocks.js', __FILE__ ),
         array( 'wp-blocks' )
     );
