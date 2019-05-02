@@ -21,6 +21,10 @@ const removeBlocks = [
 	'core-embed/videopress',
 	'core-embed/vine',
 	'core-embed/wordpress-tv',
+	'jetpack/mailchimp',
+	'jetpack/business-hours',
+	'jetpack/map',
+	'jetpack/gif',
 ]
 
 wp.hooks.addFilter('blocks.registerBlockType', 'hideBlocks', (pSettings, pName) => {
