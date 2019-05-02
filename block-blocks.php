@@ -4,7 +4,7 @@
  * Plugin Name: Block-Blocks
  * Description: Removing Blocks from the new Block-based Editor
  * Version:     0.1
- * Author:      mrjarbenne
+ * Author:      r-a-y
  * Author URI:  https://mrjarbenne.ca
  * License:     GPLv2+
  *
