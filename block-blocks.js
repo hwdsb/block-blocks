@@ -25,6 +25,7 @@ const removeBlocks = [
 	'jetpack/business-hours',
 	'jetpack/map',
 	'jetpack/gif',
+	'jetpack/recurring-payments',
 ]
 
 wp.hooks.addFilter('blocks.registerBlockType', 'hideBlocks', (pSettings, pName) => {
