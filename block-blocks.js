@@ -21,6 +21,7 @@ const removeBlocks = [
 	'core-embed/videopress',
 	'core-embed/vine',
 	'core-embed/wordpress-tv',
+	'core-embed/amazon-kindle',
 	'jetpack/mailchimp',
 	'jetpack/business-hours',
 	'jetpack/map',
