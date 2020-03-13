@@ -27,6 +27,14 @@ const removeBlocks = [
 	'jetpack/map',
 	'jetpack/gif',
 	'jetpack/recurring-payments',
+	'jetpack/calendly',
+	'jetpack/eventbrite',
+	'jetpack/revue',
+	'jetpack/opentable',
+	'jetpack/calendly',
+	'jetpack/amazon',
+	'jetpack/wordads',
+	'jetpack/pinterest',
 ]
 
 wp.hooks.addFilter('blocks.registerBlockType', 'hideBlocks', (pSettings, pName) => {
