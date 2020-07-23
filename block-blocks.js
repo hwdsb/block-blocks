@@ -35,6 +35,7 @@ const removeBlocks = [
 	'jetpack/amazon',
 	'jetpack/wordads',
 	'jetpack/pinterest',
+	'jetpack/send-a-message',
 ]
 
 wp.hooks.addFilter('blocks.registerBlockType', 'hideBlocks', (pSettings, pName) => {
