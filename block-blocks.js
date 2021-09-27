@@ -39,6 +39,22 @@ const removeBlocks = [
 	'jetpack/wordads',
 	'jetpack/pinterest',
 	'jetpack/send-a-message',
+	'coblocks/opentable',
+	'bp/latest-activities',
+	'bp/friends',
+	'bp/dynamic-groups',
+	'bp/dynamic-members',
+	'bp/member',
+	'bp/members',
+	'bp/login-form',
+	'bp/online-members',
+	'bp/sitewide-notices',
+	'bp/groups',
+	'bp/group',
+	'bp/messages',
+	'bp/active-members',
+	'bp/embed-activity',
+	'bp/recent-posts',
 ]
 
 wp.hooks.addFilter('blocks.registerBlockType', 'hideBlocks', (pSettings, pName) => {
