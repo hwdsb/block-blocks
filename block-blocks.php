@@ -18,9 +18,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 function hwdsb_blacklist_blocks() {
 	wp_enqueue_script(
 		'hwdsb_blacklist_blocks',
-		plugins_url( 'block-blocks.js', __FILE__ ),
+		plugins_url( basename( __DIR__ ) ) . '/block-blocks.js',
 		array( 'wp-blocks' ),
-		'20210511'
+		'20210929'
 	);
 }
 add_action( 'enqueue_block_editor_assets', 'hwdsb_blacklist_blocks' );
