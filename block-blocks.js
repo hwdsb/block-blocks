@@ -40,25 +40,20 @@ const removeBlocks = [
 	'jetpack/pinterest',
 	'jetpack/send-a-message',
 	'coblocks/opentable',
-	'bp/latest-activities',
-	'bp/friends',
-	'bp/dynamic-groups',
-	'bp/dynamic-members',
-	'bp/member',
-	'bp/members',
-	'bp/login-form',
-	'bp/online-members',
-	'bp/sitewide-notices',
-	'bp/groups',
-	'bp/group',
-	'bp/messages',
-	'bp/active-members',
-	'bp/embed-activity',
-	'bp/recent-posts',
+]
+
+const removeBlocksByNamespace = [
+	'bp'
 ]
 
 wp.hooks.addFilter('blocks.registerBlockType', 'hideBlocks', (pSettings, pName) => {
 	if (removeBlocks.indexOf(pName) !== -1) {
+		return Object.assign({}, pSettings, {
+			supports: Object.assign({}, pSettings.supports, {inserter: false})
+		})
+	}
+
+	if (removeBlocksByNamespace.indexOf(pName.substr(0, pName.indexOf('/'))) !== -1) {
 		return Object.assign({}, pSettings, {
 			supports: Object.assign({}, pSettings.supports, {inserter: false})
 		})
